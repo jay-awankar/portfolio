@@ -11,11 +11,12 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <>
-      <HeroSection />
+      <Section id="home">
+        <HeroSection />
+      </Section>
       <Section>
         <ProofBar />
       </Section>
-
       <Section id="about">
         <About />
       </Section>
@@ -31,7 +32,6 @@ export default function Home() {
       {/* <Section>
         <Experience />
       </Section> */}
-
       <Section id="contact">
         <Contact />
       </Section>
