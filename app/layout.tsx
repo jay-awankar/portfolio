@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import BackgroundWrapper from "@/components/BackgroundWrapper";
+import { Analytics } from "@vercel/analytics/next";
 // import Navbar from "@/components/Navbar";
 
 const geistSans = Geist({
@@ -66,6 +67,7 @@ export default function RootLayout({
         <BackgroundWrapper>
           {/* <Navbar /> */}
           {children}
+          <Analytics />
         </BackgroundWrapper>
       </body>
     </html>
